@@ -173,7 +173,7 @@ class VoxelNet(nn.Module):
         # convolutional middle network
         cml_out = self.cml(vwfs)
 
-        # region proposal network
+        #   region proposal network
 
         # merge the depth and feature dim into one, output probability score map and regression map
         psm,rm = self.rpn(cml_out.view(cfg.N,-1,cfg.H, cfg.W))

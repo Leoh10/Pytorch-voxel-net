@@ -1,14 +1,15 @@
-# Introduction
+# 仓库介绍
 
-This is an unofficial implementation of [VoxelNet: End-to-End Learning for Point Cloud Based 3D Object Detection](https://arxiv.org/abs/1711.06396) in pytorch. A large part of this project is based on the work [here](https://github.com/jeasinema/VoxelNet-tensorflow)
-# Dependencies
+This is an unofficial implementation of [VoxelNet: End-to-End Learning for Point Cloud Based 3D Object Detection](https://arxiv.org/abs/1711.06396) in pytorch.
+ A large part of this project is based on the work [here](https://github.com/jeasinema/VoxelNet-tensorflow)
+# 运行依赖环境要求
 - `python3.5+`
 - `pytorch` (tested on 0.3.1)
 - `opencv`
 - `shapely`
 - `mayavi`
 
-# Installation
+# 安装运行步骤
 1. Clone this repository.
 2. Compile the Cython module for box_overlaps
 ```bash
@@ -20,10 +21,10 @@ $ python3 nms/build.py
 ```
 
 
-# Data Preparation
+# 数据准备
 1. Download the 3D KITTI detection dataset from [here](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d). Data to download include:
-    * Velodyne point clouds (29 GB): input data to VoxelNet
-    * Training labels of object data set (5 MB): input label to VoxelNet
+    * Velodyne point clouds (29 GB): VoxelNet网络输入数据
+    * Training labels of object data set (5 MB): VoxelNet输入数据标签文件
     * Camera calibration matrices of object data set (16 MB): for visualization of predictions
     * Left color images of object data set (12 GB): for visualization of predictions
 
