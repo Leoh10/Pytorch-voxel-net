@@ -60,5 +60,6 @@ $ python3 data/crop.py
 - [ ] multi-gpu support
 - [ ] improve the performances
 
-
+ref:
+   1. https://github.com/skyhehe123/VoxelNet-pytorch
 
